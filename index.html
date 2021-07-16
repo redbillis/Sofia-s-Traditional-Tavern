@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- defer = so that it loads after html is loaded. We don't have to wait for the doc to load. -->
+    <script defer src="script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Panos V</title>
+</head>
+<body>
+    
+    <div class="banner">
+        <div class="text">
+            <a>Chef Panos Varouxos</a>
+        </div>
+    </div>
+
+    <!--Navigation-Bar Start-->
+    <nav class="navbar fixed-top navbar-expand-sm p-2 navbar-dark shadow-5-strong">
+    <a id="logo" class="navbar-brand" href="#">
+        <h3><strong>Sofia's</strong></h3>
+    </a>        
+    
+    <div class="collapse navbar-collapse p-4 justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-right">
+            <li class="nav-item pr-3 active">
+                <a class="nav-link active" href="#story-label">Story<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item pr-3 active">
+                <a class="nav-link active" href="#gallery">Gallery<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item pr-3 active">
+                <a class="nav-link active" href="#menu-label">Menu<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item pr-3 active">
+                <a class="nav-link active" href="#">Location<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item pr-3 active">
+                <a class="nav-link active" href="#footer-label">Reservations<span class="sr-only"></span></a>
+            </li>   
+        </ul>
+    </div>
+    </nav>
+    <!--Navigation-Bar End-->
+
+    <!--Story Label Start-->
+    <div id="story-label">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis expedita voluptatem sint, accusamus maxime assumenda debitis voluptates libero ea quasi necessitatibus ipsa sunt qui et corporis iusto? Asperiores neque dolorem laudantium non rem assumenda, magni odio accusantium quia, aliquam totam perferendis quos nam quae, provident autem molestias. Tempora impedit fuga sint magnam aspernatur, quam, reiciendis dolorem temporibus ex sed, cumque minus maiores porro. Ipsa iure odit omnis nesciunt, doloremque libero dolor quo distinctio voluptatibus? Qui totam optio ad cupiditate dolorem quisquam ipsa tempora aspernatur nesciunt quasi. Quas quo praesentium saepe autem consectetur libero accusantium, culpa ea, molestiae quae soluta!</p>
+    </div>
+    <!--Story Label End-->
+
+    <!-- Gallery Lightbox Start -->
+    <div id="gallery" class="gallery">
+        <img src="https://source.unsplash.com/1600x1200?salad">
+        <img src="https://source.unsplash.com/1024x768?wine">
+        <img src="https://source.unsplash.com/1366x768?steak">
+        <img src="https://source.unsplash.com/1920x1080?burger">
+        <img src="https://source.unsplash.com/640x360?sweet">
+        <img src="https://source.unsplash.com/320x640?beer">
+        <img src="https://source.unsplash.com/1200x1600?cheese">
+        <img src="https://source.unsplash.com/800x600?restaurant">
+      </div>
+    <!-- Gallery Lightbox End -->
+
+    <!-- Menu Start -->
+    <div id="menu-label">
+        <h2>Menu</h2>
+        <!-- List Group Flush
+            Add .list-group-flush to remove some borders and rounded corners 
+            to render list group items edge-to-edge in a parent container (e.g., cards).
+        -->
+        <!-- Make it boot5. And find solution for navbar in the original afterwards! -->
+        <!-- Check Accordition in bootstrap docs! -->
+        <div class="card">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h3><strong>Ορεκτικά</strong></h3>
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="accordion-body">
+                                    
+                                        <div class="card-body">
+                                            <img id="hover-img" src="" alt="hover element">
+                                            <ul class="list-group list-group-flush">
+                                            <li class="list-group-item" data-image="https://source.unsplash.com/600x600?chips">
+                                                <h5><strong>ΠΑΤΑΤΕΣ ΤΗΓΑΝΗΤΕΣ</strong></h5>
+                                                <p>ολόφρεσκες και τραγανές πατάτες, σερβίρονται με άγρια ρίγανη</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΦΕΤΑ ΛΑΔΟΡΙΓΑΝΗ</strong></h5>
+                                                <p>σερβίρεται με έξτρα παρθένο ελαιόλαδο και άγρια ρίγανη</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΚΡΟΚΕΤΑ ΜΕΤΣΟΒΟΝΕ</strong></h5>
+                                                <p>τυρί μετσοβόνε παναρισμένο και σιγοψημένο σε βαθύ τηγάνισμα, σερβίρεται με μαρμελάδα κυδώνι</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΤΥΡΟΚΑΥΤΕΡΗ</strong></h5>
+                                                <p>φέτα, πιπεριά καυτερή και έξτρα παρθένο ελαιόλαδο</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΦΕΤΑ ΣΤΟ ΦΟΥΡΝΟ</strong></h5>
+                                                <p>φέτα με ψιλοκομμένη φρέσκια ντομάτα και καυτερή πιπεριά</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΤΖΑΤΖΙΚΙ</strong></h5>
+                                                <p>στραγγιστό γιαούρτι με σκόρδο, αγγούρι και καρότο</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΣΑΓΑΝΑΚΙ</strong></h5>
+                                                <p>κίτρινο τυρί τυγανισμένο στο τηγάνι</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΦΕΤΑ ΚΑΤΑΪΦΙ</strong></h5>
+                                                <p>φέτα τυλιγμένη σε φύλλο καταϊφι, συνοδεύεται με μαρμελάδα πιπεριάς</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΚΡΟΚΕΤΑ ΑΓΡΙΟΓΟΥΡΟΥΝΟ</strong></h5>
+                                                <p>κροκέτααπό αγριογούρουνο μαζί με αποξηραμένα φρούτα και φρέσκο κρεμμύδι, σερβίρεται με πουρέ γλυκιάς κολοκύθας</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5><strong>ΜΑΝΙΤΑΡΙΑ ΣΩΤΕ</strong></h5>
+                                                <p>διάφορα είδη μανιταριών σωταρισμένα στο τηγάνι, σερβίρονται με άγρια ρίγανη και λάδι τρούφας</p>
+                                            </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h3><strong>Σαλάτες</strong></h3>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                    <li class="list-group-item">A fourth item</li>
+                                    <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <h3><strong>Στη Σούβλα</strong></h3>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">A fourth item</li>
+                            <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Menu End -->
+
+    <!-- Location Start -->
+    <div id="location">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2><strong>Find us here!</strong></h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8732.569788382267!2d20.99502306604215!3d39.301183243119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c07ba4b62a595%3A0xe6f0792671e1e0af!2zzqTOsc6yzrXPgc69zrEgzqDOuc-Dz4TOuc6xzr3OsQ!5e0!3m2!1sel!2sgr!4v1625918105074!5m2!1sel!2sgr"
+                    width="900" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    title="Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location End -->
+
+    <!-- Footer Start -->
+    <section class="footer-dark">
+        <footer id="footer-label">
+            <div class="container">
+                <div class="col-md-auto">
+                    <h3><strong>Sofia's</strong></h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-auto item">
+                        <a class="nav-link active" href="#story-label">Story<span class="sr-only"></span></a>
+                    </div>
+                    <div class="col-md-auto item">
+                        <a class="nav-link active" href="#gallery">Gallery<span class="sr-only"></span></a>
+                    </div>
+                    <div class="col-md-auto item">
+                        <a class="nav-link active" href="#menu-label">Menu<span class="sr-only"></span></a>
+                    </div>
+                    <div class="col-md-auto item">
+                        <a class="nav-link active" href="#">Location<span class="sr-only"></span></a>
+                    </div>
+                    <div class="col-md-auto item">
+                        <a class="nav-link" href="#newsletter">FAQ<span class="sr-only"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-auto item social">
+                    <a target="_blank" href="https://www.facebook.com/eight8.gr">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/eight_web.agency/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="copyright">Copyright© Vasilis Kokkinos. 2021. All rights reserved</p>
+            </div>
+        </footer>
+    </section>
+    <!-- Footer End -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+   
+</body>
+</html>
