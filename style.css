@@ -106,11 +106,11 @@ nav ul li {
     margin: 25px;
 }
 
-.card {
+#menu-label .card {
     margin: 80px 200px;
 }
 
-.card h5 {
+#menu-label .card h5 {
     color: rgb(107, 104, 104);
 }
 
@@ -125,9 +125,28 @@ nav ul li {
   } */
 /* Menu End */
 
+/* About Us Start */
 /* Location Start */
-#location h2{
-    margin: 100px;
+#about-us {
+    background-color: #000;
+    margin-bottom: -20px;
+}
+
+#about-us h2{
+    color: white;
+    text-align: center;
+    margin: 60px;
+    padding-top: 50px;
+}
+
+#about-us .card{
+    color: white;
+    background-color: #000;
+}
+
+#about-us li {
+    color: white;
+    background-color: #000;
 }
 /* Location End */
 
@@ -136,21 +155,15 @@ nav ul li {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
     filter: invert(100%);
     color: black;
     background-color: white;
 }
 
-.container img {
-    margin-top: 50px;
-}
-
 .footer-dark .item a {
     color: black;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 12px;
     font-weight: bold;
     font-size: 16px
 }
@@ -181,9 +194,9 @@ nav ul li {
 
 .footer-dark .copyright {
     text-align: center;
-    padding-top: 24px;
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0
 }
 /* Footer End */
+/* About Us End */
