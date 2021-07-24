@@ -32,7 +32,7 @@
     <div class="collapse navbar-collapse p-4 justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto align-right">
             <li class="nav-item pr-3 active">
-                <a class="nav-link active" href="#story-label">Story<span class="sr-only"></span></a>
+                <a class="nav-link active" href="#story-label">Ιστορία<span class="sr-only"></span></a>
             </li>
             <li class="nav-item pr-3 active">
                 <a class="nav-link active" href="#gallery">Gallery<span class="sr-only"></span></a>
@@ -41,7 +41,7 @@
                 <a class="nav-link active" href="#menu-label">Menu<span class="sr-only"></span></a>
             </li>
             <li class="nav-item pr-3 active">
-                <a class="nav-link active" href="#about-us">About Us<span class="sr-only"></span></a>
+                <a class="nav-link active" href="#about-us">Επικοινωνία<span class="sr-only"></span></a>
             </li>  
         </ul>
     </div>
@@ -49,152 +49,168 @@
     <!--Navigation-Bar End-->
 
     <!--Story Label Start-->
-    <div id="story-label">
-        <h2>Our Story</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis expedita voluptatem sint, accusamus maxime assumenda debitis voluptates libero ea quasi necessitatibus ipsa sunt qui et corporis iusto? Asperiores neque dolorem laudantium non rem assumenda, magni odio accusantium quia, aliquam totam perferendis quos nam quae, provident autem molestias. Tempora impedit fuga sint magnam aspernatur, quam, reiciendis dolorem temporibus ex sed, cumque minus maiores porro. Ipsa iure odit omnis nesciunt, doloremque libero dolor quo distinctio voluptatibus? Qui totam optio ad cupiditate dolorem quisquam ipsa tempora aspernatur nesciunt quasi. Quas quo praesentium saepe autem consectetur libero accusantium, culpa ea, molestiae quae soluta!</p>
+    <div class="container">
+        <div id="story-label">
+            <h2>Η Ιστορία μας</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis expedita voluptatem sint, accusamus maxime assumenda debitis voluptates libero ea quasi necessitatibus ipsa sunt qui et corporis iusto? Asperiores neque dolorem laudantium non rem assumenda, magni odio accusantium quia, aliquam totam perferendis quos nam quae, provident autem molestias. Tempora impedit fuga sint magnam aspernatur, quam, reiciendis dolorem temporibus ex sed, cumque minus maiores porro. Ipsa iure odit omnis nesciunt, doloremque libero dolor quo distinctio voluptatibus? Qui totam optio ad cupiditate dolorem quisquam ipsa tempora aspernatur nesciunt quasi. Quas quo praesentium saepe autem consectetur libero accusantium, culpa ea, molestiae quae soluta!</p>
+        </div>
     </div>
     <!--Story Label End-->
 
     <!-- Gallery Lightbox Start -->
-    <div id="gallery" class="gallery">
-        <img src="https://source.unsplash.com/1600x1200?salad">
-        <img src="https://source.unsplash.com/1024x768?wine">
-        <img src="https://source.unsplash.com/1366x768?steak">
-        <img src="https://source.unsplash.com/1920x1080?burger">
-        <img src="https://source.unsplash.com/640x360?sweet">
-        <img src="https://source.unsplash.com/320x640?beer">
-        <img src="https://source.unsplash.com/1200x1600?cheese">
-        <img src="https://source.unsplash.com/800x600?restaurant">
-      </div>
+    <div id="gallery" class="container-fluid">
+        <h2 style="text-align: center;"><strong>Gallery</strong></h2>
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images\Carousel\tavern-outside-day.jpg" class="d-block w-100" alt="salad">
+              </div>
+              <div class="carousel-item">
+                <img src="Images\Carousel\tavern-outside-night.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images\Carousel\sample-food.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images\Carousel\meat-on-fire.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images\Carousel\people-night.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/6000x4000?steak" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/6000x4000?salad" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
     <!-- Gallery Lightbox End -->
 
     <!-- Menu Start -->
-    <div id="menu-label">
-        <h2>Menu</h2>
+    <div id="menu-label" class="container">
+        <h2><strong>Menu</strong></h2>
         <!-- List Group Flush
             Add .list-group-flush to remove some borders and rounded corners 
             to render list group items edge-to-edge in a parent container (e.g., cards).
         -->
         <!-- Make it boot5. And find solution for navbar in the original afterwards! -->
         <!-- Check Accordition in bootstrap docs! -->
-        <div class="card">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <h3><strong>Ορεκτικά</strong></h3>
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="accordion-body">
-                                    
-                                        <div class="card-body">
-                                            <img id="hover-img" src="" alt="hover element">
-                                            <ul class="list-group list-group-flush">
-                                            <li class="list-group-item" data-image="https://source.unsplash.com/600x600?chips">
-                                                <h5><strong>ΠΑΤΑΤΕΣ ΤΗΓΑΝΗΤΕΣ</strong></h5>
-                                                <p>ολόφρεσκες και τραγανές πατάτες, σερβίρονται με άγρια ρίγανη</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΦΕΤΑ ΛΑΔΟΡΙΓΑΝΗ</strong></h5>
-                                                <p>σερβίρεται με έξτρα παρθένο ελαιόλαδο και άγρια ρίγανη</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΚΡΟΚΕΤΑ ΜΕΤΣΟΒΟΝΕ</strong></h5>
-                                                <p>τυρί μετσοβόνε παναρισμένο και σιγοψημένο σε βαθύ τηγάνισμα, σερβίρεται με μαρμελάδα κυδώνι</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΤΥΡΟΚΑΥΤΕΡΗ</strong></h5>
-                                                <p>φέτα, πιπεριά καυτερή και έξτρα παρθένο ελαιόλαδο</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΦΕΤΑ ΣΤΟ ΦΟΥΡΝΟ</strong></h5>
-                                                <p>φέτα με ψιλοκομμένη φρέσκια ντομάτα και καυτερή πιπεριά</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΤΖΑΤΖΙΚΙ</strong></h5>
-                                                <p>στραγγιστό γιαούρτι με σκόρδο, αγγούρι και καρότο</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΣΑΓΑΝΑΚΙ</strong></h5>
-                                                <p>κίτρινο τυρί τυγανισμένο στο τηγάνι</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΦΕΤΑ ΚΑΤΑΪΦΙ</strong></h5>
-                                                <p>φέτα τυλιγμένη σε φύλλο καταϊφι, συνοδεύεται με μαρμελάδα πιπεριάς</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΚΡΟΚΕΤΑ ΑΓΡΙΟΓΟΥΡΟΥΝΟ</strong></h5>
-                                                <p>κροκέτααπό αγριογούρουνο μαζί με αποξηραμένα φρούτα και φρέσκο κρεμμύδι, σερβίρεται με πουρέ γλυκιάς κολοκύθας</p>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <h5><strong>ΜΑΝΙΤΑΡΙΑ ΣΩΤΕ</strong></h5>
-                                                <p>διάφορα είδη μανιταριών σωταρισμένα στο τηγάνι, σερβίρονται με άγρια ρίγανη και λάδι τρούφας</p>
-                                            </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h3><strong>Ορεκτικά</strong></h3>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΠΑΤΑΤΕΣ ΤΗΓΑΝΗΤΕΣ</strong></h5>
+                            <p>ολόφρεσκες και τραγανές πατάτες, σερβίρονται με άγρια ρίγανη</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΦΕΤΑ ΛΑΔΟΡΙΓΑΝΗ</strong></h5>
+                            <p>σερβίρεται με έξτρα παρθένο ελαιόλαδο και άγρια ρίγανη</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΚΡΟΚΕΤΑ ΜΕΤΣΟΒΟΝΕ</strong></h5>
+                            <p>τυρί μετσοβόνε παναρισμένο και σιγοψημένο σε βαθύ τηγάνισμα, σερβίρεται με μαρμελάδα κυδώνι</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΤΥΡΟΚΑΥΤΕΡΗ</strong></h5>
+                            <p>φέτα, πιπεριά καυτερή και έξτρα παρθένο ελαιόλαδο</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΦΕΤΑ ΣΤΟ ΦΟΥΡΝΟ</strong></h5>
+                            <p>φέτα με ψιλοκομμένη φρέσκια ντομάτα και καυτερή πιπεριά</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΤΖΑΤΖΙΚΙ</strong></h5>
+                            <p>στραγγιστό γιαούρτι με σκόρδο, αγγούρι και καρότο</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΣΑΓΑΝΑΚΙ</strong></h5>
+                            <p>κίτρινο τυρί τυγανισμένο στο τηγάνι</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΦΕΤΑ ΚΑΤΑΪΦΙ</strong></h5>
+                            <p>φέτα τυλιγμένη σε φύλλο καταϊφι, συνοδεύεται με μαρμελάδα πιπεριάς</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΚΡΟΚΕΤΑ ΑΓΡΙΟΓΟΥΡΟΥΝΟ</strong></h5>
+                            <p>κροκέτααπό αγριογούρουνο μαζί με αποξηραμένα φρούτα και φρέσκο κρεμμύδι, σερβίρεται με πουρέ γλυκιάς κολοκύθας</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 style="color: rgb(107, 104, 104)"><strong>ΜΑΝΙΤΑΡΙΑ ΣΩΤΕ</strong></h5>
+                            <p>διάφορα είδη μανιταριών σωταρισμένα στο τηγάνι, σερβίρονται με άγρια ρίγανη και λάδι τρούφας</p>
+                        </li>
+                      </ul>
                 </div>
+              </div>
             </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        <h3><strong>Σαλάτες</strong></h3>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <h3><strong>Σαλάτες</strong></h3>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
                 </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     <h3><strong>Στη Σούβλα</strong></h3>
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A fourth item</li>
-                            <li class="list-group-item">And a fifth one</li>
-                            </ul>
-                        </div>
-                    </div>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
-        
     <!-- Menu End -->
 
     <!-- About Us Start -->
     <div id="about-us">
-        <h2><strong>About Us</strong></h2>
+        <h2><strong>Επικοινωνία</strong></h2>
         <div class="card-group">
             <div class="card text-center">
                 <div class="card-header">
@@ -209,8 +225,8 @@
             </div>
             <div class="card">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8732.569788382267!2d20.99502306604215!3d39.301183243119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c07ba4b62a595%3A0xe6f0792671e1e0af!2zzqTOsc6yzrXPgc69zrEgzqDOuc-Dz4TOuc6xzr3OsQ!5e0!3m2!1sel!2sgr!4v1625918105074!5m2!1sel!2sgr"
-                width="900" 
-                height="300" 
+                width="auto" 
+                height="auto" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
@@ -218,9 +234,9 @@
                 </iframe>
             </div>
             <div class="card text-center">
-                <div class="card-header">
+                <!-- <div class="card-header">
                     <h4><strong>Επικοινωνία</strong></h4>
-                </div>
+                </div> -->
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Διεύθυνση: <small class="text-muted">Πιστιανά, Άρτας</small></li>
                     <li class="list-group-item">Τηλέφωνο: <small class="text-muted">26830-71559</small></li>

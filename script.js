@@ -24,24 +24,24 @@ lightbox.addEventListener("click", e => {
 
 // Menu Start
 
-const items = document.querySelectorAll('.list-group-item');
-const image = document.querySelector('#hover-img');
+// const items = document.querySelectorAll('.list-group-item');
+// const image = document.querySelector('#hover-img');
 
-items.forEach((el) => {
-  el.addEventListener('mouseover', (e) => {
-    let imageData = e.target.getAttribute('data-image');
-    console.log(imageData);
-    e.target.style.zIndex = 99;
-    image.setAttribute('src', imageData);
-  })
-  el.addEventListener('mousemove', (e) => {
-    image.style.top = e.clientY + 'px';
-    image.style.left = e.clientX + 'px';
-  })
-  el.addEventListener('mouseleave', (e) => {
-    e.target.style.zIndex = 1;
-    image.setAttribute('src', '');
-  })
-})
+// items.forEach((el) => {
+//   el.addEventListener('mouseover', (e) => {
+//     let imageData = e.target.getAttribute('data-image');
+//     console.log(imageData);
+//     e.target.style.zIndex = 99;
+//     image.setAttribute('src', imageData);
+//   })
+//   el.addEventListener('mousemove', (e) => {
+//     image.style.top = e.clientY + 'px';
+//     image.style.left = e.clientX + 'px';
+//   })
+//   el.addEventListener('mouseleave', (e) => {
+//     e.target.style.zIndex = 1;
+//     image.setAttribute('src', '');
+//   })
+// })
 
 // Menu End

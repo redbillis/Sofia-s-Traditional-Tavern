@@ -4,7 +4,7 @@ body {
 
 /* Banner Start */
 .banner {
-    background-image: url('steak-image-001.jpg');
+    background-image: url('Images/DSC08422.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +43,8 @@ nav ul li {
 /* Story Label Start */
 #story-label {
     text-align: center;
-    margin: 150px;
+    margin-top: 120px;
+    margin-bottom: 170px;
 }
 
 #story-label h2 {
@@ -53,19 +54,12 @@ nav ul li {
 /* Story Label End */
 
 /* Gallery Lightbox Start */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 500px);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-    height: 100%;
+#gallery {
+    margin-top: 100px;
 }
 
-.gallery img {
-    width: 500px;
-    height: 400px;
-    cursor: pointer;
+#gallery h2 {
+    margin-bottom: 50px;
 }
 
 #lightbox {
@@ -98,20 +92,8 @@ nav ul li {
 /* Menu Start */
 #menu-label {
     text-align: center;
-    margin: 150px;
-}
-
-#menu-label h2 {
-    font-weight: 700;
-    margin: 25px;
-}
-
-#menu-label .card {
-    margin: 80px 200px;
-}
-
-#menu-label .card h5 {
-    color: rgb(107, 104, 104);
+    margin-top: 150px;
+    margin-bottom: 170px;
 }
 
 /* #hover-img {
