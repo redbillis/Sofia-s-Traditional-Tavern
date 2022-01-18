@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
 body {
     top: 0;
+    font-family: 'Vollkorn', serif;
 }
 
 /* Banner Start */
